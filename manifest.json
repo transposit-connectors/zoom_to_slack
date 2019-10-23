@@ -101,7 +101,8 @@
         }
       }, {
         "ref": "slack.raw",
-        "requireConsumerSignin": true
+        "requireConsumerSignin": true,
+        "title": "Slack Account"
       }, {
         "ref": "zoom.raw",
         "requireConsumerSignin": true,
