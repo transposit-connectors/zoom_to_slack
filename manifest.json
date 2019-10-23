@@ -112,6 +112,11 @@
       }],
       "javascriptAPIVersion": "3",
       "source": "src",
+      "userSettings": [{
+        "name": "channel",
+        "description": "Channel to post the recordings to (for example, 'video-archive')",
+        "type": "STRING"
+      }],
       "userSettingsDisplay": "GENERATED"
     }
   }
