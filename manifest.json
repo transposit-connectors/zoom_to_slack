@@ -104,7 +104,9 @@
         "requireConsumerSignin": true
       }, {
         "ref": "zoom.raw",
-        "requireConsumerSignin": true
+        "requireConsumerSignin": true,
+        "title": "Zoom",
+        "description": "Connect your Zoom account (JWT)"
       }],
       "javascriptAPIVersion": "3",
       "source": "src",
