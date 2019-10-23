@@ -102,6 +102,9 @@
       }, {
         "ref": "slack.raw",
         "requireConsumerSignin": true
+      }, {
+        "ref": "zoom.raw",
+        "requireConsumerSignin": true
       }],
       "javascriptAPIVersion": "3",
       "source": "src",
