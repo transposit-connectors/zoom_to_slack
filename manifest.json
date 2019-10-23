@@ -97,6 +97,8 @@
         "type": "STRING"
       }],
       "userSettingsDisplay": "GENERATED"
-    }
+    },
+    "description": "This app will post all your Zoom recordings to a given channel.",
+    "displayName": "Zoom To Slack"
   }
 }
