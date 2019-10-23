@@ -23,7 +23,7 @@
             "description": "end date, for example '2019-10-10'",
             "type": "STRING"
           }],
-          "tql": "SELECT rl.share_url, rl.start_time, rl.topic, rl.id FROM zoom.recordings_list as rl \nJOIN zoom.users as u\nON rl.userId = u.id\nWHERE `from`=@start_date\nAND to=@end_date\nAND trash=false\n"
+          "tql": "SELECT rl.share_url, rl.start_time, rl.topic, rl.id FROM zoom.recordings_list as rl \nJOIN zoom.users as u\nON rl.userId = u.id\nWHERE `from`=@start_date\nAND to=@end_date\nAND trash=false\nORDER BY rl.start_time asc"
         }
       }, {
         "id": "post_chat_message",
