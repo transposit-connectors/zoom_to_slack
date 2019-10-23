@@ -47,6 +47,12 @@
           "js": "post_recording_to_slack.js",
           "lang": "js"
         }
+      }, {
+        "id": "scheduled_run",
+        "function": {
+          "js": "scheduled_run.js",
+          "lang": "js"
+        }
       }],
       "dataConnections": [{
         "ref": "slack_identify.raw",
