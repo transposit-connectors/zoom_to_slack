@@ -45,6 +45,21 @@
         "tql": {
           "tql": "-- This SQL operation is useful to test the message you've\n-- constructed for your webhook. If you provide a Slack\n-- auth in \"Auth & user settings\", it will post a message\n-- to your Slackbot channel.\nSELECT * FROM slack.post_chat_message AS A\nJOIN this.get_slack_message AS B\nON A.$body.blocks = B.blocks\nAND A.$body.text = B.text\nWHERE A.$body.channel = (SELECT user_id from slack.test_auth)"
         }
+      }, {
+        "id": "recordings_list",
+        "tql": {
+          "parameters": [{
+            "name": "start_date",
+            "description": "start date, for example '2019-10-10'",
+            "type": "STRING",
+            "required": true
+          }, {
+            "name": "end_date",
+            "description": "end date, for example '2019-10-10'",
+            "type": "STRING"
+          }],
+          "tql": "SELECT rl.share_url, rl.start_time, rl.topic FROM zoom.recordings_list as rl \nJOIN zoom.users as u\nON rl.userId = u.id\nWHERE `from`=@start_date\nAND to=@end_date\nAND trash=false\n"
+        }
       }],
       "dataConnections": [{
         "ref": "slack_identify.raw",
