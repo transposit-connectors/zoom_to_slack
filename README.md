@@ -1,3 +1,4 @@
+# Zoom To Slack
 Ever wanted a catalog of your Zoom recordings? 
 
 This application will push all Zoom recordings to a Slack channel.
