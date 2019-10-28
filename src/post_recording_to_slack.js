@@ -3,7 +3,7 @@
   const userId = api.user().id;
   
   const startDate = moment().add(-1, 'months').format("YYYY-MM-DD");
-  const endDate = moment().format("YYYY-MM-DD");
+  const endDate = moment().add(1,'days').format("YYYY-MM-DD");
   const recordings = api.run("this.recordings_list", {start_date : startDate, end_date: endDate});
 
   const channel = user_setting.get('channel');
