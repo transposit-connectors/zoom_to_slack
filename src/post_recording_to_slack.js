@@ -8,7 +8,7 @@
 
   const channel = user_setting.get('channel');
   recordings.forEach(r => {
-    const stashKey = userId + "-" + r.id;
+    const stashKey = userId + "-" + r['share_url'];
     if (stash.get(stashKey)) {
       return;
     }
